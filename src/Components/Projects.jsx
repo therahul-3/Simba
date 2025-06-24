@@ -33,7 +33,7 @@ function Projects() {
                   style={{ flex: '1 1 25%', maxWidth: '25%' }}
                 >
                   <img
-                    src={`src/assets/${item.icon}`}
+                    src={item.icon}
                     alt={item.label}
                     className="mb-2"
                     style={{
