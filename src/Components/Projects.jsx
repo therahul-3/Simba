@@ -1,9 +1,14 @@
+import residentialIcon from '../assets/residential.png';
+import commercialIcon from '../assets/commercial.png';
+import industrialIcon from '../assets/industrial-park.png';
+import civilIcon from '../assets/civil.png';
+
 function Projects() {
   const projectItems = [
-    { label: "Residential Projects", icon: "residential.png" },
-    { label: "Commercial Projects", icon: "commercial.png" },
-    { label: "Industrial Projects", icon: "industrial-park.png" },
-    { label: "Civil Projects", icon: "civil.png" },
+    { label: "Residential Projects", icon: residentialIcon  },
+    { label: "Commercial Projects", icon: commercialIcon },
+    { label: "Industrial Projects", icon: industrialIcon },
+    { label: "Civil Projects", icon: civilIcon},
   ];
 
   return (
