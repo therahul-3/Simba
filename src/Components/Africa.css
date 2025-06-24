@@ -1,0 +1,74 @@
+ .africa-section {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* Africa Image floats on top of speech box */
+.africa-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 430px;
+  margin-bottom: -60px;
+  z-index: 2;
+  position: relative;
+}
+
+/* Orange speech box with tail */
+.speech-box {
+  background-color: #ff4d00;
+  padding: 6rem , 5.7rem ;
+  padding-bottom: 20px;
+  border-radius: 0;
+  position: relative;
+  top: -0.9rem;
+  left: -9rem;
+  z-index: 1;
+  margin-top: 60px;
+  scale: 1.1;
+}
+
+/* Tail on the left side */
+.speech-box::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  width: 0;
+  height: 0;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ff4d00;
+}
+.custom-mini-text{
+  font-size: 0.68rem;
+  text-align: justify;
+  padding-left: 1.3rem;
+}
+
+.heading-align{
+   padding-left: 1.3rem;
+}
+
+/* Highlight "Africa" word */
+.text-highlight {
+  color: white;
+  font-weight: 1000;
+}
+
+/* Optional desktop scale for message box */
+@media (min-width: 768px) {
+
+  .speech-box {
+    padding: 2.25rem 4rem 2rem 4rem;
+    transform: scale(1.1);
+  }
+  
+}
+
+@media (max-width: 768px) {
+
+  .speech-box {
+    padding: 2rem 3rem 2rem 3rem;
+    transform: scale(1.1);
+  }
+ 
+}
